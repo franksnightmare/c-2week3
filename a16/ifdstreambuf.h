@@ -7,9 +7,10 @@ enum Mode
     CLOSE_FD
 };
 
-class IFdStreambuf: public streambuf
+explicit class IFdStreambuf: public streambuf
 {
     private:
+		Mode d_mode = KEEP_FD;
         char buffer[100];
         int d_FD;
 
@@ -17,9 +18,9 @@ class IFdStreambuf: public streambuf
         IFdStreambuf(Mode mode = KEEP_FD);
         IFdStreambuf(int FD, Mode mode = KEEP_FD);
         ~IFdStreambuf();
-        close(int FD);
-        open(int FD, Mode mode = KEEP_FD);
-        size_t xsgetn override;
+        void close(int FD);
+        void open(int FD, Mode mode = KEEP_FD);
+        std::streamsize xsgetn(char* s, std::streamsize n) override;
 };
 
 #endif

@@ -1,7 +1,12 @@
 #include "ifdstreambuf.ih"
 
-size_t IFdStreambuf::xsgetn(char* s, size_t n)
+std::streamsize IFdStreambuf::xsgetn(char* s, std::streamsize n)
 {
-    memcpy(buffer, s, 100);
-    read(FD, buffer, 100);
+	if (n <= 100)
+		memcpy(buffer, s, n);
+	else
+	{
+		memcpy(buffer, s, 100);
+		read(FD, s + 100, n - 100);
+	}
 }
