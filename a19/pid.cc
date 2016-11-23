@@ -2,8 +2,5 @@
 
 pid_t Fork::pid()
 {
-	if d_pid == getpid()
-		return 0;
-	else
-		return d_pid;
+	return d_pid == 0 ? 0 : d_pid;
 }

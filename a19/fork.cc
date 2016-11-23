@@ -1,16 +1,16 @@
 #include "fork.ih"
 
 void Fork::fork()
-{
-	int id = fork();
-	if id < 0
-		exit(1);
-	if id > 0
-	{
-		
-		if waitForChild() == 0;
-	
-		parentProcess();
+{	
+	pid_t pid = fork();
+	if (pid == 0)
 		childProcess();
+	if (pid > 0)
+	{
+		d_pid = pid;
+		parentProcess();
+		waitForChild();
 	}
+	if (pid < 0)
+		exit(1);
 }

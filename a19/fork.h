@@ -6,11 +6,10 @@
 
 class Fork
 {
-	pid_t d_pid;
-	pid_t d_child;
+	pid_t d_pid = 0;
 	
 	public:
-		int fork();
+		void fork();
 	protected:
 		pid_t pid();
 		int Fork::waitForChild() const;
