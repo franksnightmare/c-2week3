@@ -24,10 +24,12 @@ std::streamsize BiStreamBuffer::xsputn(const char* s, std::streamsize n)
 	return 0;
 }
 
+
 class BiStream: public std::ostream
 {
 	public:
 		BiStream(std::ofstream &one, std::ofstream &two);
+		~BiStream();
 };
 
 
@@ -35,6 +37,11 @@ BiStream::BiStream(std::ofstream &one, std::ofstream &two)
 :
 	std::ostream(new BiStreamBuffer(one, two))
 {
+}
+
+BiStream::~BiStream()
+{
+	delete this->rdbuf();
 }
 
 int main()
