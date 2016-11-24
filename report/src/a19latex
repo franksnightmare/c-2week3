@@ -1,0 +1,21 @@
+\section*{Exercise 19: Forks}
+We were tasked with making an abstract \texttt{Fork}.
+Its derived classes are able to fork themselves by calling the member \texttt{fork()}.
+A tester class was made to check if the forking works.
+
+\subsection*{Sample output}
+\begin{lstlisting}
+Parent process 20571 here!
+BEEP
+Child process 0 here!
+BOOP
+\end{lstlisting}
+
+\subsection*{Code listings}
+\lstinputlisting[caption = main.cc]{src/a19/main.cc}
+\lstinputlisting[caption = fork.ih]{src/a19/fork/fork.ih}
+\lstinputlisting[caption = fork.h]{src/a19/fork/fork.h}
+\lstinputlisting[caption = childprocesstester.cc]{src/a19/fork/childprocesstester.cc}
+\lstinputlisting[caption = parentprocesstester.cc]{src/a19/fork/parentprocesstester.cc}
+\lstinputlisting[caption = pid.cc]{src/a19/fork/pid.cc}
+\lstinputlisting[caption = waitforchild.cc]{src/a19/fork/waitforchild.cc}
