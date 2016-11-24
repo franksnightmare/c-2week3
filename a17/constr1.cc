@@ -1,6 +1,6 @@
 #include "ifdstreambuf.ih"
 
-IFdStreambuf::IFdStreambuf(Mode mode = KEEP_FD)
+IFdStreambuf::IFdStreambuf(Mode mode)
 :
 	d_mode(mode)
 {

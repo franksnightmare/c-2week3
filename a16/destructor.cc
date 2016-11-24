@@ -1,7 +1,7 @@
 #include "ifdstreambuf.ih"
 
-~IFdStreambuf::IFdStreambuf()
+IFdStreambuf::~IFdStreambuf()
 {
-    if (mode == CLOSE_FD)
+    if (d_mode == CLOSE_FD)
 		close(d_FD);
 }

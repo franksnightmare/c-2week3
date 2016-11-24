@@ -1,5 +1,7 @@
 #ifndef IFDSTREAMBUF_H
 #define IFDSTREAMBUF_H
+#include <iostream>
+#include <streambuf>
 
 enum Mode
 {
@@ -7,16 +9,16 @@ enum Mode
     CLOSE_FD
 };
 
-explicit class IFdStreambuf: public streambuf
+class IFdStreambuf: public std::streambuf
 {
     private:
-		Mode d_mode = KEEP_FD;
+		int d_FD;
+		Mode d_mode;
         char buffer[100];
-        int d_FD;
 
     public:
-        IFdStreambuf(Mode mode = KEEP_FD);
-        IFdStreambuf(int FD, Mode mode = KEEP_FD);
+        explicit IFdStreambuf(Mode mode = KEEP_FD);
+        explicit IFdStreambuf(int FD, Mode mode = KEEP_FD);
         ~IFdStreambuf();
         void close(int FD);
         void open(int FD, Mode mode = KEEP_FD);

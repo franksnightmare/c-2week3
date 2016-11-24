@@ -1,6 +1,6 @@
 #include "ifdstreambuf.ih"
 
-void IFdStreambuf::open(int FD, Mode mode = KEEP_FD)
+void IFdStreambuf::open(int FD, Mode mode)
 {
     d_FD = FD;
     d_mode = mode;

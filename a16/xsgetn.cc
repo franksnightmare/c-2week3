@@ -7,6 +7,7 @@ std::streamsize IFdStreambuf::xsgetn(char* s, std::streamsize n)
 	else
 	{
 		memcpy(buffer, s, 100);
-		read(FD, s + 100, n - 100);
+		read(d_FD, s + 100, n - 100);
 	}
+	return n;
 }
