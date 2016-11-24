@@ -1,7 +1,7 @@
 #ifndef OFDSTREAMBUF_H
 #define OFDSTREAMBUF_H
+
 #include "mode.h"
-#include <iostream>
 #include <streambuf>
 
 class OFdStreambuf: public std::streambuf

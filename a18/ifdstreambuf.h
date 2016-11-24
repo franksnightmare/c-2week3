@@ -2,7 +2,6 @@
 #define IFDSTREAMBUF_H
 
 #include "mode.h"
-#include <iostream>
 #include <streambuf>
 
 class IFdStreambuf: public std::streambuf

@@ -1,0 +1,107 @@
+\documentclass[11pt]{article}
+
+\usepackage{times}
+\usepackage[english]{babel}
+
+% -----------------------------------------------
+% especially use this for you code
+% -----------------------------------------------
+
+\usepackage{courier}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{tabularx}
+\usepackage{graphicx}
+
+\definecolor{Gray}{gray}{0.95}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{language=C++,
+	basicstyle = \normalsize\ttfamily,   % the size and fonts that are used
+	tabsize = 2,                    % sets default tabsize
+	breaklines = true,              % sets automatic line breaking
+	keywordstyle=\color{blue}\ttfamily,
+	stringstyle=\color{red}\ttfamily,
+	commentstyle=\color{mygreen}\ttfamily,
+	numbers=left,
+	keepspaces=true,
+	showspaces=false,
+	showstringspaces=false,
+}
+
+\begin{document}
+
+\title{Programming in C/C++ \\
+       Exercises set two: inheritance
+}
+\date{\today}
+\author{Christiaan Steenkist \\
+Jaime Betancor Valado \\
+Remco Bos \\
+}
+
+\maketitle
+\section*{Exercise 9, addition/subtraction hierarchy header files}
+These are the final header files for this class hierarchy.
+
+\subsection*{Code listings}
+\lstinputlisting[caption = addition.ih]{src/a11/addition/addition.ih}
+\lstinputlisting[caption = addition.h]{src/a11/addition/addition.h}
+\lstinputlisting[caption = binops.ih]{src/a11/binops/binops.ih}
+\lstinputlisting[caption = binops.h]{src/a11/binops/binops.h}
+\lstinputlisting[caption = subtraction.ih]{src/a11/subtraction/subtraction.ih}
+\lstinputlisting[caption = subtraction.h]{src/a11/subtraction/subtraction.h}
+
+\section*{Exercise 10, compound assignment operators}
+Here we implement the compound assignment operators in the class hierarchy.
+
+\subsection*{Code listings}
+\lstinputlisting[caption = operator\texttt{+=}.cc]{src/a11/addition/operator+=.cc}
+\lstinputlisting[caption = operator\texttt{-=}.cc]{src/a11/subtraction/operator-=.cc}
+
+\section*{Exercise 11, free binary operators}
+Here we implement the free binary operators in the class hierarchy as well as the add and sub members.
+
+\subsection*{Code listings}
+\lstinputlisting[caption = main.cc]{src/a11/main.cc}
+\lstinputlisting[caption = operator+.cc]{src/a11/addition/operator+.cc}
+\lstinputlisting[caption = operator-.cc]{src/a11/subtraction/operator-.cc}
+
+\subsubsection*{Operation code}
+\lstinputlisting[caption = operations.ih]{src/a11/operations/operations.ih}
+\lstinputlisting[caption = operations.h]{src/a11/operations/operations.h}
+\lstinputlisting[caption = add.cc]{src/a11/operations/add.cc}
+\lstinputlisting[caption = sub.cc]{src/a11/operations/sub.cc}
+
+\section*{Exercise 12, matrix copying}
+We were tasked with initializing an array with copies of a matrix \texttt{mat} with only a \texttt{new} statement.
+
+\subsection*{Solution}
+Because the default constructor is always called we made a new class that is derived from matrix.
+This \texttt{Copymatrix} holds a static \texttt{Matrix} that is used to initialize the class.
+By returning a \texttt{Matrix} pointer the unnecessary data is sliced off.
+
+\subsection*{Code listings}
+\lstinputlisting[caption = main.ih]{src/a12/main.ih}
+\lstinputlisting[caption = main.h]{src/a12/main.h}
+\lstinputlisting[caption = factory.cc]{src/a12/factory.cc}
+\lstinputlisting[caption = main.cc]{src/a12/main.cc}
+
+\subsubsection*{Copymatrix}
+\lstinputlisting[caption = copymatrix.ih]{src/a12/copymatrix.ih}
+\lstinputlisting[caption = copymatrix.h]{src/a12/copymatrix.h}
+\lstinputlisting[caption = copymatrix1.cc]{src/a12/copymatrix1.cc}
+
+\section*{Exercise 13, red thread}
+We were tasked with using inheritence to include the \texttt{Limits} class into a number of other classes.
+
+\subsection*{Code listings}
+\lstinputlisting[caption = fighter.h]{src/a13/fighter/fighter.h}
+\lstinputlisting[caption = fighter's altitudeto.cc]{src/a13/fighter/altitudeto.cc}
+\lstinputlisting[caption = monitor.h]{src/a13/monitor/monitor.h}
+\lstinputlisting[caption = time.h]{src/a13/time/time.h}
+
+\end{document}
