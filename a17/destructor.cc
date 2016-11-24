@@ -1,6 +1,6 @@
-#include "ifdstreambuf.ih"
+#include "ofdstreambuf.ih"
 
-IFdStreambuf::~IFdStreambuf()
+OFdStreambuf::~OFdStreambuf()
 {
     if (d_mode == CLOSE_FD)
 		close(d_FD);

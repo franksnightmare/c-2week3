@@ -2,12 +2,12 @@
 
 std::streamsize IFdStreambuf::xsgetn(char* s, std::streamsize n)
 {
-	if (n <= 100)
-		memcpy(buffer, s, n);
+	if (n <= bufferSize)
+		memcpy(s, buffer, n * sizeof(char));
 	else
 	{
-		memcpy(buffer, s, 100);
-		read(d_FD, s + 100, n - 100);
+		memcpy(s, buffer, bufferSize * sizeof(char));
+		read(d_FD, s + bufferSize, (n - bufferSize) * sizeof(char));
 	}
 	return n;
 }

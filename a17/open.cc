@@ -1,8 +1,8 @@
-#include "ifdstreambuf.ih"
+#include "ofdstreambuf.ih"
 
-void IFdStreambuf::open(int FD, Mode mode)
+void OFdStreambuf::open(int FD, Mode mode)
 {
     d_FD = FD;
     d_mode = mode;
-    read(FD, buffer, 100);
+    //read(FD, buffer, 100);
 }

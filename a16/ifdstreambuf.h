@@ -14,6 +14,7 @@ class IFdStreambuf: public std::streambuf
     private:
 		int d_FD;
 		Mode d_mode;
+		std::size_t bufferSize = 100;
         char buffer[100];
 
     public:

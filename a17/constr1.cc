@@ -1,6 +1,6 @@
-#include "ifdstreambuf.ih"
+#include "ofdstreambuf.ih"
 
-IFdStreambuf::IFdStreambuf(Mode mode)
+OFdStreambuf::OFdStreambuf(Mode mode)
 :
 	d_mode(mode)
 {
