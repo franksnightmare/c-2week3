@@ -2,8 +2,8 @@
 
 std::streamsize IFdStreambuf::xsgetn(char* s, std::streamsize n)
 {
-	cout << "EXTRACTING\n";
-	if (n <= bufferSize)
+	int size = bufferSize;
+	if (n <= size)
 		memcpy(s, buffer, n * sizeof(char));
 	else
 	{

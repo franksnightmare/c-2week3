@@ -2,8 +2,8 @@
 
 std::streamsize OFdStreambuf::xsputn(char const *s, std::streamsize n)
 {
-	cout << "INSERTING\n";
-	if (n <= bufferSize - place)
+	int bound = bufferSize - place;
+	if (n <= bound)
 	{
 		memcpy(buffer + place, s, n);
 		place += n;

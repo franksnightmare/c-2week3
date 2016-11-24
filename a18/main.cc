@@ -44,9 +44,7 @@ int main(int argc, char **argv)
 	IFdStream in(0);
 	OFdStream out(1);
 	
-	std::string variable = "fslkjfsdf\n";
+	std::string variable;
 	in >> variable;
-	out << variable << std::endl;
-	
-	//std::cout << variable << std::endl;
+	out << variable << '\n' << std::flush;
 }
