@@ -1,6 +1,7 @@
 #include "ofdstreambuf.ih"
 
-std::streamsize OFdStreambuf::xsputn(char const *s, std::streamsize n)
+std::streamsize OFdStreambuf::xsputn(char const *s,
+	std::streamsize n)
 {
 	int bound = bufferSize - place;
 	if (n <= bound)

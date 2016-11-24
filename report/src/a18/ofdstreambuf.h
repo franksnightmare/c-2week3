@@ -18,13 +18,15 @@ class OFdStreambuf: public std::streambuf
 	protected:
 		int pSync();
 	
-    public:
-        explicit OFdStreambuf(Mode mode = KEEP_FD);
-        explicit OFdStreambuf(int FD, Mode mode = KEEP_FD);
-        ~OFdStreambuf();
-        void close(int FD);
-        void open(int FD, Mode mode = KEEP_FD);
-        std::streamsize xsputn(char const *s, std::streamsize n) override;
+	public:
+		explicit OFdStreambuf(Mode mode = KEEP_FD);
+		explicit OFdStreambuf(int FD,
+			Mode mode = KEEP_FD);
+		~OFdStreambuf();
+		void close(int FD);
+		void open(int FD, Mode mode = KEEP_FD);
+		std::streamsize xsputn(char const *s,
+			std::streamsize n) override;
 };
 
 #endif
