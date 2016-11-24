@@ -1,15 +1,15 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.6.30)  17 NOV 2016 15:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.28)  24 NOV 2016 14:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **week2report.tex
 (./week2report.tex
-LaTeX2e <2011/06/27>
-Babel <3.9h> and hyphenation patterns for 35 languages loaded.
+LaTeX2e <2016/02/01>
+Babel <3.9q> and hyphenation patterns for 3 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -27,16 +27,18 @@ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2013/12/03 3.9h The Babel package
+Package: babel 2016/02/24 3.9q The Babel package
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2012/08/20 v3.3p English support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2013/12/03 3.9h Babel common definitions
+File: babel.def 2016/02/24 3.9q Babel common definitions
 \babel@savecnt=\count87
 \U@D=\dimen103
 )
+\l@british = a dialect from \language\l@english 
+\l@UKenglish = a dialect from \language\l@english 
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
@@ -46,7 +48,7 @@ Package: courier 2005/04/12 PSNFSS-v9.2a (WaS)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
 \lst@mode=\count88
@@ -63,23 +65,23 @@ Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \lst@maxwidth=\dimen107
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 \c@lstnumber=\count94
 \lst@skipnumbers=\count95
 \lst@framebox=\box27
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2013/08/26 1.5b listings configuration
+File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
-Package: listings 2013/08/26 1.5b (Carsten Heinz)
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+Package: color 2016/01/03 v1.1b Standard LaTeX Color (DPC)
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 130.
+Package color Info: Driver file: pdftex.def on input line 143.
 
 (/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
@@ -93,10 +95,10 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gread@gobject=\count96
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
-Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
+Package: tabularx 2014/10/28 v2.10 `tabularx' package (DPC)
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen108
 \extrarowheight=\dimen109
 \NC@list=\toks16
@@ -112,32 +114,32 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \TX@ftn=\toks17
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 91.
+Package graphics Info: Driver file: pdftex.def on input line 95.
 )
 \Gin@req@height=\dimen115
 \Gin@req@width=\dimen116
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2013/08/26 1.5b listings language file
+File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2013/08/26 1.5b listings language file
+File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
-No file week2report.aux.
+(./week2report.aux)
 \openout1 = `week2report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
@@ -153,7 +155,7 @@ LaTeX Font Info:    ... okay on input line 35.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
 LaTeX Font Info:    ... okay on input line 35.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 35.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 \c@lstlisting=\count98
@@ -233,41 +235,33 @@ LaTeX Font Info:    Try loading font information for OT1+pcr on input line 51.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-(./src/a11/addition/addition.ih) (./src/a11/addition/addition.h [1
+) (./src/a15/main.ih)
+(./src/a15/main.cc) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./src/a11/binops/binops.
-ih)
-(./src/a11/binops/binops.h) (./src/a11/subtraction/subtraction.ih)
-(./src/a11/subtraction/subtraction.h [2]) (./src/a11/addition/operator+=.cc)
-(./src/a11/subtraction/operator-=.cc) [3] (./src/a11/main.cc)
-(./src/a11/addition/operator+.cc) (./src/a11/subtraction/operator-.cc [4])
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 73.
-
-(./src/a11/operations/operations.ih) (./src/a11/operations/operations.h
-[5]) (./src/a11/operations/add.cc) (./src/a11/operations/sub.cc)
-(./src/a12/main.ih [6]) (./src/a12/main.h) (./src/a12/factory.cc)
-(./src/a12/main.cc [7]) (./src/a12/copymatrix.ih) (./src/a12/copymatrix.h)
-(./src/a12/copymatrix1.cc) (./src/a13/fighter/fighter.h [8] [9])
-(./src/a13/fighter/altitudeto.cc) (./src/a13/monitor/monitor.h [10])
-(./src/a13/time/time.h [11] [12]) [13] (./week2report.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+(./src/a15/bistream.h) (./src/a15/bistreambuffer.h) (./src/a15/construc.cc
+[2]) (./src/a15/construct2.cc) (./src/a15/destructor.cc) (./src/a15/xsputn.cc)
+[3] (./src/a16/ifdstreambuf.ih) (./src/a16/ifdstream.h)
+(./src/a16/ifdstreambuf.h [4]) (./src/a16/iclose.cc) (./src/a16/iconstr1.cc)
+(./src/a16/iconstr2.cc [5]) (./src/a16/idestructor.cc) (./src/a16/iopen.cc)
+(./src/a16/iuflow.cc [6]) (./src/a16/iunderflow.cc) (./src/a16/xsgetn.cc)
+[7] (./week2report.aux) ) 
 Here is how much of TeX's memory you used:
- 3767 strings out of 493917
- 53625 string characters out of 6157788
- 212475 words of memory out of 5000000
- 6898 multiletter control sequences out of 15000+600000
- 17331 words of font info for 39 fonts, out of 8000000 for 9000
- 788 hyphenation exceptions out of 8191
- 37i,6n,58p,237b,1491s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive
-/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/ty
-pe1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
-/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on week2report.pdf (13 pages, 59237 bytes).
+ 3666 strings out of 494953
+ 51906 string characters out of 6180977
+ 194822 words of memory out of 5000000
+ 6842 multiletter control sequences out of 15000+600000
+ 15705 words of font info for 37 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 37i,6n,58p,237b,1489s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r
+.enc}</usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on week2report.pdf (7 pages, 49945 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
- 41 compressed objects within 1 object stream
+ 41 PDF objects out of 1000 (max. 8388607)
+ 28 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
