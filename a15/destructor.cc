@@ -2,6 +2,5 @@
 
 BiStream::~BiStream()
 {
-	delete this->rdbuf();
 }
 

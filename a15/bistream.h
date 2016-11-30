@@ -1,11 +1,10 @@
 #ifndef BISTREAM_H
 #define BISTREAM_H
 
-#include "main.ih"
+#include "bistreambuffer.h"
 
-class BiStream: public std::ostream
+class BiStream: public BiStreamBuffer, public std::ostream
 {
-	//BiStreamBuffer d_object;
 	public:
 		BiStream(std::ofstream &one, std::ofstream &two);
 		~BiStream();
