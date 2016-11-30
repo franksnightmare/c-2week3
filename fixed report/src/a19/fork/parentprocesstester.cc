@@ -2,6 +2,6 @@
 
 void Tester::parentProcess()
 {
-	std::cout << "Parent process " << pid()
+	std::cout << "Parent process " << getpid()
 		<< " here!\nBEEP\n";
 }

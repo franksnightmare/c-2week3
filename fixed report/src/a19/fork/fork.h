@@ -11,6 +11,7 @@ class Fork
 	
 	public:
 		void fork();
+		virtual ~Fork();
 	protected:
 		pid_t pid();
 		int waitForChild() const;
@@ -21,6 +22,11 @@ class Fork
 
 class Tester: public Fork
 {
+	public:
+		Tester() = default;
+		~Tester() override;
+		Tester(Tester const &other) = delete;
+		void operator=(Tester const &other) = delete;
 	private:
 		void parentProcess() override;
 		void childProcess() override;

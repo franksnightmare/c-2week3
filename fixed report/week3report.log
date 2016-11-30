@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.6.30)  24 NOV 2016 14:59
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.6.30)  30 NOV 2016 11:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -137,7 +137,7 @@ File: lstlang1.sty 2013/08/26 1.5b listings language file
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
 )
-No file week3report.aux.
+(./week3report.aux)
 \openout1 = `week3report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
@@ -153,7 +153,7 @@ LaTeX Font Info:    ... okay on input line 35.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
 LaTeX Font Info:    ... okay on input line 35.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 35.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 \c@lstlisting=\count98
@@ -257,23 +257,24 @@ LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <10.95> not available
 (./src/a18/istreamconstr.cc) (./src/a18/istreamdestr.cc) (./src/a18/ofdstream.h
 [13]) (./src/a18/ostreamconstr.cc) (./src/a18/ostreamdestr.cc)
 (./src/a19/main.cc [14]) (./src/a19/fork/fork.ih) (./src/a19/fork/fork.h
-[15]) (./src/a19/fork/childprocesstester.cc)
-(./src/a19/fork/parentprocesstester.cc) (./src/a19/fork/pid.cc)
-(./src/a19/fork/waitforchild.cc [16]) [17] (./week3report.aux) ) 
+[15]) (./src/a19/fork/childprocesstester.cc) (./src/a19/fork/forkdestructor.cc)
+(./src/a19/fork/parentprocesstester.cc) (./src/a19/fork/pid.cc [16])
+(./src/a19/fork/testdestructor.cc) (./src/a19/fork/waitforchild.cc) [17]
+(./week3report.aux) ) 
 Here is how much of TeX's memory you used:
- 3804 strings out of 493917
- 53981 string characters out of 6157788
+ 3818 strings out of 493917
+ 54232 string characters out of 6157788
  195475 words of memory out of 5000000
- 6879 multiletter control sequences out of 15000+600000
+ 6885 multiletter control sequences out of 15000+600000
  16739 words of font info for 40 fonts, out of 8000000 for 9000
  788 hyphenation exceptions out of 8191
  37i,6n,58p,237b,1487s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/tex
-live/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/font
-s/type1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/c
-ourier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on week3report.pdf (17 pages, 69522 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc
+}</usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/urw/times/utmr8a.pfb>
+Output written on week3report.pdf (17 pages, 69930 bytes).
 PDF statistics:
  76 PDF objects out of 1000 (max. 8388607)
  52 compressed objects within 1 object stream

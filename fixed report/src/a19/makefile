@@ -1,4 +1,4 @@
-FORK = fork.o pid.o waitforchild.o childprocesstester.o parentprocesstester.o
+FORK = forkdestructor.o testdestructor.o fork.o pid.o waitforchild.o childprocesstester.o parentprocesstester.o
 
 #memory/memory.ih.gch: memory/memory.ih
 #	g++ -std=c++11 -x c++-header $<
