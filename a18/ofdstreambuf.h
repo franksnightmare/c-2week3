@@ -24,6 +24,7 @@ class OFdStreambuf: public std::streambuf
         int close(int FD);
         void open(int FD, FDBufferMode mode = KEEP_FD);
         std::streamsize xsputn(char const *buffer, std::streamsize size) override;
+        int overflow(char character) override;
 };
 
 #endif

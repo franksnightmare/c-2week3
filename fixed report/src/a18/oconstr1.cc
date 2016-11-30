@@ -1,7 +1,8 @@
 #include "ofdstreambuf.ih"
 
-OFdStreambuf::OFdStreambuf(Mode mode)
+OFdStreambuf::OFdStreambuf(FDBufferMode mode)
 :
 	d_mode(mode)
 {
+	setp(d_buffer, d_buffer + d_bufferSize);
 }

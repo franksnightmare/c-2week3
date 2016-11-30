@@ -1,26 +1,22 @@
 #include "ofdstreambuf.ih"
 
-std::streamsize OFdStreambuf::xsputn(char const *s,
-	std::streamsize n)
+streamsize OFdStreambuf::xsputn(char const *buffer, streamsize size)
 {
-	int bound = bufferSize - place;
-	if (n <= bound)
+	int remaining = epptr() - pptr();
+	if (size <= remaining)
 	{
-		memcpy(buffer + place, s, n);
-		place += n;
-		return n;
+		memcpy(pptr(), buffer, size * sizeof(char));
+		pbump(size);
+
+		if (size == remaining)
+			sync();
+
+		return size;
 	}
-	else
-		sync();
-	
-	size_t remaining = n;
-	while (remaining > bufferSize)
-	{
-		write(d_FD, s, bufferSize * sizeof(char));
-		s += bufferSize;
-		remaining -= bufferSize;
-	}
-	memcpy(buffer, s, remaining * sizeof(char));
-	place = remaining;
-	return n;
+	sync();
+
+	if (!write(d_FD, buffer, size))
+		return 0;
+
+	return size;	
 }

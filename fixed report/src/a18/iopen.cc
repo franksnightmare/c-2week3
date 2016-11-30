@@ -1,8 +1,7 @@
 #include "ifdstreambuf.ih"
 
-void IFdStreambuf::open(int FD, Mode mode)
+void IFdStreambuf::open(int FD, FDBufferMode mode)
 {
     d_FD = FD;
     d_mode = mode;
-    read(FD, buffer, bufferSize * sizeof(char));
 }
