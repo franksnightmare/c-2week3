@@ -1,6 +1,7 @@
 #include "ofdstreambuf.ih"
 
-streamsize OFdStreambuf::xsputn(char const *buffer, streamsize size)
+streamsize OFdStreambuf::xsputn(char const *buffer,
+	streamsize size)
 {
 	int remaining = epptr() - pptr();
 	if (size <= remaining)

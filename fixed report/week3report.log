@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.6.30)  30 NOV 2016 13:37
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.6.30)  30 NOV 2016 15:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -240,44 +240,44 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 (./src/a15/bistream.h) (./src/a15/bistreambuffer.h)
 (./src/a15/bufferconstructor.cc [2]) (./src/a15/streamconstructor.cc)
 (./src/a15/streamdestructor.cc) (./src/a15/xsputn.cc) [3]
-(./src/a18/ifdstreambuf.ih) (./src/a18/mode.h) (./src/a18/ifdstreambuf.h
-[4]) (./src/a18/iclose.cc) (./src/a18/iconstr1.cc) (./src/a18/iconstr2.cc
-[5]) (./src/a18/idestructor.cc) (./src/a18/iopen.cc) (./src/a18/iuflow.cc)
-[6] (./src/a18/iunderflow.cc) (./src/a18/xsgetn.cc) (./src/a18/ofdstreambuf.ih
-[7]) (./src/a18/ofdstreambuf.h) (./src/a18/oclose.cc [8])
-(./src/a18/oconstr1.cc) (./src/a18/oconstr2.cc) (./src/a18/odestructor.cc)
-(./src/a18/oopen.cc [9]) (./src/a18/psync.cc) (./src/a18/sync.cc)
-(./src/a18/xsputn.cc [10]) (./src/a18/main.h) (./src/a18/main.cc)
+(./src/a18/ifdstreambuf.ih) (./src/a18/fdbuffermode.h)
+(./src/a18/ifdstreambuf.h [4]) (./src/a18/iclose.cc) (./src/a18/iconstr1.cc)
+(./src/a18/iconstr2.cc [5]) (./src/a18/idestructor.cc) (./src/a18/iopen.cc)
+(./src/a18/iuflow.cc) (./src/a18/iunderflow.cc [6]) (./src/a18/xsgetn.cc)
+(./src/a18/ofdstreambuf.ih [7]) (./src/a18/ofdstreambuf.h [8])
+(./src/a18/oclose.cc) (./src/a18/oconstr1.cc) (./src/a18/oconstr2.cc)
+(./src/a18/odestructor.cc [9]) (./src/a18/oopen.cc) (./src/a18/ooverflow.cc)
+(./src/a18/psync.cc) (./src/a18/sync.cc [10]) (./src/a18/xsputn.cc) [11]
+(./src/a18/main.h) (./src/a18/main.cc)
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 99.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 100.
 LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 99.
-
-(./src/a18/ifdstream.h [11]) (./src/a18/istreamconstr.cc)
-(./src/a18/istreamdestr.cc) (./src/a18/ofdstream.h [12])
-(./src/a18/ostreamconstr.cc) (./src/a18/ostreamdestr.cc) [13]
-(./src/a19/main.cc) (./src/a19/fork/fork.ih) (./src/a19/fork/fork.h [14])
-(./src/a19/fork/childprocesstester.cc) (./src/a19/fork/forkdestructor.cc)
-(./src/a19/fork/parentprocesstester.cc) [15] (./src/a19/fork/pid.cc)
-(./src/a19/fork/testdestructor.cc) (./src/a19/fork/waitforchild.cc) [16]
-(./week3report.aux) ) 
+(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 100.
+ (./src/a18/ifdstream.h)
+(./src/a18/istreamconstr.cc [12]) (./src/a18/istreamdestr.cc)
+(./src/a18/ofdstream.h) (./src/a18/ostreamconstr.cc) [13]
+(./src/a18/ostreamdestr.cc) (./src/a19/main.cc) (./src/a19/fork/fork.ih)
+(./src/a19/fork/fork.h [14]) (./src/a19/fork/childprocesstester.cc [15])
+(./src/a19/fork/forkdestructor.cc) (./src/a19/fork/parentprocesstester.cc)
+(./src/a19/fork/pid.cc) (./src/a19/fork/testdestructor.cc)
+(./src/a19/fork/waitforchild.cc [16]) [17] (./week3report.aux) ) 
 Here is how much of TeX's memory you used:
- 3813 strings out of 493917
- 54144 string characters out of 6157788
- 197475 words of memory out of 5000000
- 6885 multiletter control sequences out of 15000+600000
+ 3839 strings out of 493917
+ 54509 string characters out of 6157788
+ 203475 words of memory out of 5000000
+ 6908 multiletter control sequences out of 15000+600000
  16739 words of font info for 40 fonts, out of 8000000 for 9000
  788 hyphenation exceptions out of 8191
  37i,6n,58p,237b,1487s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc
-}</usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf
--dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/urw/times/utmr8a.pfb>
-Output written on week3report.pdf (16 pages, 69355 bytes).
+{/usr/share/tex
+live/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/font
+s/type1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/c
+ourier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on week3report.pdf (17 pages, 69679 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
- 50 compressed objects within 1 object stream
+ 76 PDF objects out of 1000 (max. 8388607)
+ 52 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

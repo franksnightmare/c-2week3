@@ -2,7 +2,10 @@
 
 int IFdStreambuf::underflow()
 {
-	if (!read(d_FD, d_buffer, d_bufferSize * sizeof(char)))
+	if (!read(d_FD, d_buffer,
+		d_bufferSize * sizeof(char)))
+		
 		return EOF;
+	
 	return *eback();
 }

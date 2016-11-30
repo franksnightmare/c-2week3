@@ -15,15 +15,19 @@ class OFdStreambuf: public std::streambuf
 		int sync() override;
 
 	protected:
-		explicit OFdStreambuf(FDBufferMode mode = KEEP_FD);
-        explicit OFdStreambuf(int FD, FDBufferMode mode = KEEP_FD);
+		explicit OFdStreambuf(
+			FDBufferMode mode = KEEP_FD);
+        explicit OFdStreambuf(int FD,
+			FDBufferMode mode = KEEP_FD);
 		int pSync();
 
     public:
         ~OFdStreambuf();
         int close(int FD);
-        void open(int FD, FDBufferMode mode = KEEP_FD);
-        std::streamsize xsputn(char const *buffer, std::streamsize size) override;
+        void open(int FD,
+			FDBufferMode mode = KEEP_FD);
+        std::streamsize xsputn(char const *buffer,
+			std::streamsize size) override;
         int overflow(int character = EOF) override;
 };
 
