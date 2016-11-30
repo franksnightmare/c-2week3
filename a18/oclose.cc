@@ -1,7 +1,6 @@
 #include "ofdstreambuf.ih"
 
-void OFdStreambuf::close(int FD)
+int OFdStreambuf::close(int FD)
 {
-    ::close(FD);
-    // code for setting mode to CLOSE_FD here
+    return ::close(FD);    
 }

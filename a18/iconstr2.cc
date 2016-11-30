@@ -1,9 +1,9 @@
 #include "ifdstreambuf.ih"
 
-IFdStreambuf::IFdStreambuf(int FD, Mode mode)
+IFdStreambuf::IFdStreambuf(int FD, FDBufferMode mode)
 :
 	d_FD(FD),
 	d_mode(mode)
 {
-	read(FD, buffer, bufferSize * sizeof(char));
+	setg(d_buffer, d_buffer + d_bufferSize, d_buffer + d_bufferSize);
 }

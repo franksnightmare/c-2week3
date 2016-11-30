@@ -7,22 +7,21 @@
 class IFdStreambuf: public std::streambuf
 {
 	int d_FD;
-	Mode d_mode;
-	std::size_t bufferSize = 100;
-	char buffer[100] {0};
-	size_t place = 0;
-		
+	FDBufferMode d_mode;
+	std::size_t d_bufferSize = 100;
+	new char d_buffer[100];
+
 	protected:
+		explicit IFdStreambuf(FDBufferMode mode = KEEP_FD);
+        explicit IFdStreambuf(int FD, FDBufferMode mode = KEEP_FD);
 		int underflow() override;
 		int uflow() override;
-		std::streamsize xsgetn(char* s, std::streamsize n) override;
-	
+		std::streamsize xsgetn(char* buffer, std::streamsize size) override;
+
     public:
-        explicit IFdStreambuf(Mode mode = KEEP_FD);
-        explicit IFdStreambuf(int FD, Mode mode = KEEP_FD);
         ~IFdStreambuf();
-        void close(int FD);
-        void open(int FD, Mode mode = KEEP_FD);
+        int close(int FD);
+        void open(int FD, FDBufferMode mode = KEEP_FD);
 };
 
 #endif

@@ -7,24 +7,23 @@
 class OFdStreambuf: public std::streambuf
 {
 	int d_FD;
-	Mode d_mode;
-	size_t bufferSize = 200;
-	char buffer[200];
-	size_t place = 0;
-	
+	FDBufferMode d_mode;
+	size_t d_bufferSize = 100;
+	new char d_buffer[100];
+
 	private:
 		int sync() override;
-	
+
 	protected:
+		explicit OFdStreambuf(FDBufferMode mode = KEEP_FD);
+        explicit OFdStreambuf(int FD, FDBufferMode mode = KEEP_FD);
 		int pSync();
-	
+
     public:
-        explicit OFdStreambuf(Mode mode = KEEP_FD);
-        explicit OFdStreambuf(int FD, Mode mode = KEEP_FD);
         ~OFdStreambuf();
-        void close(int FD);
-        void open(int FD, Mode mode = KEEP_FD);
-        std::streamsize xsputn(char const *s, std::streamsize n) override;
+        int close(int FD);
+        void open(int FD, FDBufferMode mode = KEEP_FD);
+        std::streamsize xsputn(char const *buffer, std::streamsize size) override;
 };
 
 #endif
